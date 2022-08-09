@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes user-scalable=no">
+        <title>壁紙</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: rgb(235, 235, 235);
+                background-image: url(image/background.png);
+                background-size: 360px 360px; /* image size */
+                animation: bg 15s infinite linear;
+                overflow-x: hidden;
+            }
+            @keyframes bg {
+                0% {
+                  background-position: 0 0;
+                }
+                100% {
+                  background-position: 360px 360px;
+                }
+            }
+
+            #full{
+                height:100vh;
+                width:100vw;
+                backdrop-filter: blur(2px);
+                -webkit-backdrop-filter: blur(2px);
+            }
+        </style> 
+    </head>
+
+    <body>
+        <div id="full">
+        </div>
+    </body>
+</html>
